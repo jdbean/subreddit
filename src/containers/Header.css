@@ -1,0 +1,44 @@
+.Header {
+  font-family: Helvetica, sans-serif;
+  font-size: 16pt;
+  width: 100%;
+  margin-top: -100px;
+  text-align: left;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  background-color: white;
+  opacity: 0.8;
+  border-bottom: 1px solid gray;
+  z-index: 20;
+  white-space: nowrap;
+}
+
+
+
+.Header-section {
+  padding: 10px 7px 10px 7px;
+  background-color: white;
+  height: auto;
+  display: flex;
+  color: #57a2e4;
+  text-decoration: none;
+  transition: .7s ease-in;
+}
+
+.Header-active {
+  background-color: #57a2e4;
+  color: white;
+  fill: currentColor;
+  transition: .7s ease-out;
+}
+
+.Header svg > path {
+  fill: currentColor;
+}
+
+.Header-icon {
+  height: 22px;
+  margin-right: 3px;
+}

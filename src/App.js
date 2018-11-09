@@ -1,25 +1,78 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Route, Switch } from 'react-router-dom';
+import Favorites from './containers/Favorites';
+import Header from './containers/Header';
+import Main from './containers/Main';
 
 class App extends Component {
+  state = { favorites: {} }
+
+  toggleFavorite = (post) => {
+    const postId = post.id
+    if (!this.isFavorite(postId)) {
+      this.setState({
+        favorites: { ...this.state.favorites, [postId]: post }
+      })
+    } else {
+      const newFavorites = Object.assign(this.state.favorites);
+      delete newFavorites[postId]
+      this.setState({
+        favorites: newFavorites
+      })
+    }
+  }
+
+  isFavorite = (postId) => {
+    return this.state.favorites[postId] ? true : false
+  }
+
+  main = () => {
+    return (
+      <Main
+        toggleFavorite={this.toggleFavorite}
+        isFavorite={this.isFavorite}
+      />
+    );
+  }
+  fav = () => {
+    return (
+      <Favorites
+        favorites={this.state.favorites}
+        toggleFavorite={this.toggleFavorite}
+        isFavorite={this.isFavorite}
+      />
+    );
+  }
+  head = () => {
+    return (
+      <Header
+        favoritesNum={Object.keys(this.state.favorites).length}
+      />
+    );
+  }
+
+
+
+
   render() {
+    console.log(this.state.favorites)
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <Route path="/" component={this.head} />
+        <Switch>
+          <Route
+            exact={true}
+            path="/"
+            component={this.main}
+          />
+          <Route
+            exact
+            path="/favorites"
+            component={this.fav}
+          />
+        </Switch>
+
+
       </div>
     );
   }
