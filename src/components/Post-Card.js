@@ -78,7 +78,7 @@ class PostCard extends Component {
         {this.favoriteIcon()}
         <a
           className="post-title"
-          href={`https://reddit.com/${this.props.post.permalink}`}
+          href={`https://reddit.com${this.props.post.permalink}`}
         >
           {this.title}
         </a>
