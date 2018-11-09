@@ -84,7 +84,7 @@ class PostCard extends Component {
         </a>
         <span className="post-data">
           <UserIcon />
-          <a href={`https://reddit.com/${this.props.post.user}`}>
+          <a href={`https://reddit.com${this.props.post.user}`}>
             {this.props.post.user}
           </a>
           <span className="post-dot">•</span>
