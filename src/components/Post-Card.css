@@ -64,11 +64,12 @@
 .inactive-overlay {
   left: -6%;
   transition: 0.7s ease;
+  transform: translateX(0%);
 }
 
 .post-card:hover .inactive-overlay {
   left: 2%;
-
+  transform: translateX(0%);
 }
 
 .active-overlay {
