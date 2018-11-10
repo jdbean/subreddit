@@ -9,13 +9,11 @@
   flex-direction: row;
   justify-content: left;
   background-color: white;
-  opacity: 0.8;
+  opacity: 0.85;
   border-bottom: 1px solid gray;
   z-index: 20;
   white-space: nowrap;
 }
-
-
 
 .Header-section {
   padding: 10px 7px 10px 7px;
