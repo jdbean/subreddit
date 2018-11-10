@@ -1,4 +1,20 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# SubReddit
+
+SubReddit allows users to view and favorite posts on the r/evilbuildings subreddit. 
+
+# Technologies
+
+The project is a single page application written in React with two routes: one for viewing top posts and another for viewing favorites. No styling frameworks have been used in this project, all CSS and animations are custom developed in order to keep the project as lean as possible. External dependencies include:
+
+* The react-router library is used for routing and integration with the browser history api.
+
+* Axios is employed for loading external JSON data from the Reddit API.
+
+* React-timeago is employed for translating dates to the 'n seconds/minutes/days ago' format. This proved to be a lighter and more purpose-built solution than something like moment.js.
+
+* All icons are SVGs that have been obtained from FontAwesome. FontAwesome is the creator of all such Icons and no modifications aside from meta-data (classnames) have been made. Use of these assets is permitted under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/legalcode).
+
+This project was bootstrapped using create-react-app (CRA) and deployment eased thanks to react-gh-pages.
 
 ## Available Scripts
 
@@ -41,7 +57,24 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 To deploy this code to a live site via GitHub Pages, you and `deploy` which will build the code and deploy to the GH-Pages branch of this project on GitHub Pages. If working in a fork, be sure to update the `homepage` key in `Package.json` to match your GitHub user and repository name. 
 
-## Learn More
+### Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+## License
+
+  Copyright (C) 2018 J.D. Bean
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
