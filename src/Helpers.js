@@ -14,7 +14,6 @@ export const makePostCard = (post, type, toggleFavorite, isFavorite) => {
         return true;
     }
   }
-  console.log("relativeTime = %r", relativeTime(type))
   return (
     <PostCard
       relativeTime={relativeTime(type)}

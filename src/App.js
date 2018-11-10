@@ -55,7 +55,6 @@ class App extends Component {
 
 
   render() {
-    console.log(this.state.favorites)
     return (
       <div className="App">
         <Route path="/" component={this.head} />
