@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/subreddit/static/css/1.d1bdd11b.chunk.css"
   },
   {
-    "revision": "d136e288f8835c8b3398e2c693b55321",
+    "revision": "163fccee7350f33e490462103444bfab",
     "url": "/subreddit/index.html"
   }
 ];
