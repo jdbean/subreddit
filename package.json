@@ -2,7 +2,7 @@
   "name": "subreddit",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://jdbean.github.io/subreddit",
+  "homepage": "https://jdbean.github.io/subreddit",
   "dependencies": {
     "axios": "^0.18.0",
     "normalize.css": "^8.0.0",
