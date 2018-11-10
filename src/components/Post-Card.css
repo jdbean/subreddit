@@ -52,12 +52,13 @@
 }
 
 .favorite-icon {
-  width: 6%;
+  width: 4%;
+  position: relative;
 }
 
 .overlay {
   position: absolute;
-  top: 1.5%;
+  top: 2%;
   transition: 0.7s ease;
 }
 
@@ -73,6 +74,6 @@
 }
 
 .active-overlay {
-  left: 86%;
+  left: 90%;
   transform: translateX(100%);
 }
