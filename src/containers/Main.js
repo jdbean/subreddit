@@ -16,15 +16,15 @@ class Main extends Component {
         const posts = resp.data.data.children.map(post => {
           const data = post.data
 
-          const { 
+          const {
             title,
             ups,
             id,
-            permalink, 
+            permalink,
             created_utc
-           } = data
+          } = data
 
-          let postData = {title, ups, id, permalink}
+          let postData = { title, ups, id, permalink }
           postData.date = created_utc
           postData.image = pickImage(data)
           postData.user = `/u/${data.author}`

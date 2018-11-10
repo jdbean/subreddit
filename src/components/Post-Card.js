@@ -59,7 +59,7 @@ class PostCard extends Component {
   }
 
   toggleFavorite = () => {
-    const {toggleFavorite, post} = this.props
+    const { toggleFavorite, post } = this.props
     toggleFavorite(post)
   }
 

@@ -3,7 +3,6 @@ import { Route, Switch } from 'react-router-dom';
 import Favorites from './containers/Favorites';
 import Header from './containers/Header';
 import Main from './containers/Main';
-
 class App extends Component {
   state = { favorites: {} }
 
@@ -34,6 +33,7 @@ class App extends Component {
       />
     );
   }
+
   fav = () => {
     return (
       <Favorites
@@ -43,6 +43,7 @@ class App extends Component {
       />
     );
   }
+
   head = () => {
     return (
       <Header
@@ -50,9 +51,6 @@ class App extends Component {
       />
     );
   }
-
-
-
 
   render() {
     return (
@@ -70,8 +68,6 @@ class App extends Component {
             component={this.fav}
           />
         </Switch>
-
-
       </div>
     );
   }

@@ -1,7 +1,6 @@
 import React from 'react';
 import PostCard from './components/Post-Card'
 
-
 // Construct a PostCard component with the appropriate props
 export const makePostCard = (post, type, toggleFavorite, isFavorite) => {
   let relativeTime = (type) => {
