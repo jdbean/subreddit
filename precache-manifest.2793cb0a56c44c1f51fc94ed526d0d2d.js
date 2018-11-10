@@ -4,15 +4,15 @@ self.__precacheManifest = [
     "url": "/subreddit/static/js/runtime~main.1293de03.js"
   },
   {
-    "revision": "37c0eecfb49ae2134877",
-    "url": "/subreddit/static/js/main.37c0eecf.chunk.js"
+    "revision": "bf844351620b31f90af9",
+    "url": "/subreddit/static/js/main.bf844351.chunk.js"
   },
   {
     "revision": "e183a225b906412d43bc",
     "url": "/subreddit/static/js/1.e183a225.chunk.js"
   },
   {
-    "revision": "37c0eecfb49ae2134877",
+    "revision": "bf844351620b31f90af9",
     "url": "/subreddit/static/css/main.074afa43.chunk.css"
   },
   {
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/subreddit/static/css/1.d1bdd11b.chunk.css"
   },
   {
-    "revision": "d652fcb6f9aadaa6e6fc494b74e0b000",
+    "revision": "d136e288f8835c8b3398e2c693b55321",
     "url": "/subreddit/index.html"
   }
 ];
