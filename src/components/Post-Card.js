@@ -12,16 +12,9 @@ class PostCard extends Component {
 
   state = { isHovering: false }
 
-  post = this.props.post
-
-  title = this.props.post.title
-  ups = this.props.post.ups
-  relativeTime = this.props.relativeTime
-
   dateString = () => {
     const date = new Date(this.props.post.date * 1000)
     const relativeTime = this.props.relativeTime
-    console.log(relativeTime)
 
     if (relativeTime) {
       return <TimeAgo date={date} />
@@ -31,7 +24,10 @@ class PostCard extends Component {
   };
 
   favoriteIcon = () => {
-    if (this.props.type === "favorites") {
+    const { type, isFavorite } = this.props
+    const { id } = this.props.post
+    const isThisFavorite = isFavorite(id)
+    if (type === "favorites") {
       return (
         <TrashIcon
           className="inactive-overlay overlay Header-icon"
@@ -42,11 +38,11 @@ class PostCard extends Component {
     } else {
       return (
         <HeartIcon
-          className={this.props.isFavorite(this.props.post.id) ?
+          className={isThisFavorite ?
             "active-overlay overlay Header-icon" :
             "inactive-overlay overlay Header-icon"
           }
-          currentColor={this.props.isFavorite(this.props.post.id) ?
+          currentColor={isThisFavorite ?
             "#f47a76" :
             "white"
           }
@@ -63,36 +59,38 @@ class PostCard extends Component {
   }
 
   toggleFavorite = () => {
-    this.props.toggleFavorite(this.props.post)
+    const {toggleFavorite, post} = this.props
+    toggleFavorite(post)
   }
 
   render() {
+    const { title, image, permalink, user, ups } = this.props.post
     return (
       <div className="post-card">
         <img
           className="post-image"
-          alt={this.props.post.title}
-          src={this.props.post.image}
+          alt={title}
+          src={image}
         >
         </img>
         {this.favoriteIcon()}
         <a
           className="post-title"
-          href={`https://reddit.com${this.props.post.permalink}`}
+          href={`https://reddit.com${permalink}`}
         >
-          {this.title}
+          {title}
         </a>
         <span className="post-data">
           <UserIcon />
-          <a href={`https://reddit.com${this.props.post.user}`}>
-            {this.props.post.user}
+          <a href={`https://reddit.com${user}`}>
+            {user}
           </a>
           <span className="post-dot">•</span>
           <ClockIcon />
           {this.dateString()}
           <span className="post-dot">•</span>
           <BoltIcon />
-          {this.props.post.ups}
+          {ups}
         </span>
       </div>
     )

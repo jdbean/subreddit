@@ -6,15 +6,14 @@ import { makePostCard } from '../Helpers.js'
 class Favorites extends Component {
 
   renderPosts = () => {
-    console.log(this.props.favorites)
+    const { toggleFavorite, isFavorite } = this.props;
     const favorites = Object.values(this.props.favorites)
     return favorites.map(post => {
-      return makePostCard(post, "favorites", this.props.toggleFavorite, this.props.isFavorite);
+      return makePostCard(post, "favorites", toggleFavorite, isFavorite);
     });
   }
 
   render() {
-    console.log(Object.keys(this.props.favorites))
     if (Object.keys(this.props.favorites).length < 1) {
       return (
         <div className="main">

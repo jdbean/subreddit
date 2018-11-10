@@ -14,17 +14,21 @@ class Main extends Component {
     axios.get("https://www.reddit.com/r/evilbuildings/top.json")
       .then(resp => {
         const posts = resp.data.data.children.map(post => {
-          let data = post.data
-          let postData = {}
+          const data = post.data
 
-          postData.title = data.title
-          postData.user = `/u/${data.author}`
+          const { 
+            title,
+            ups,
+            id,
+            permalink, 
+            created_utc
+           } = data
+
+          let postData = {title, ups, id, permalink}
+          postData.date = created_utc
           postData.image = pickImage(data)
-          postData.ups = data.ups
-          postData.date = data.created_utc
-          postData.id = data.id
-          postData.permalink = data.permalink
-          postData.isFavorite = false
+          postData.user = `/u/${data.author}`
+
           return postData
         });
         this.setState({ posts });
