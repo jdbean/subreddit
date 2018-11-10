@@ -22,9 +22,10 @@ As of its initial release SubReddit has been tested and confirmed to work approp
 
 ## Roadmap
 
-SubReddit is very much at a 1.0 release stage. High priority features on the project roadmap include:
+SubReddit is very much at a 1.0 release stage. High priority features/tasks on the project roadmap include:
 
 1. Implementation of a rigorous test system to ensure code quality and enable TDD.
+1. Proper accessibility review.
 1. The ability for users to store favorite post data in browser storage for future visits.
 1. infinite-loading or load-more button to allow users to access additional top-posts from the subreddit.
 1. A tasteful exit-animation when removing favorited posts in the favorites view.
