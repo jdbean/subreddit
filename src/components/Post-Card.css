@@ -51,21 +51,27 @@
   margin-left: 1px;
 }
 
+.favorite-icon {
+  width: 6%;
+}
+
 .overlay {
   position: absolute;
-  top: 8px;
+  top: 1.5%;
   transition: 0.7s ease;
 }
 
 .inactive-overlay {
-  left: -26px;
+  left: -6%;
   transition: 0.7s ease;
 }
 
 .post-card:hover .inactive-overlay {
-  left: 8px;
+  left: 2%;
+
 }
 
 .active-overlay {
-  left: 470px;
+  left: 86%;
+  transform: translateX(100%);
 }

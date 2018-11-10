@@ -30,7 +30,7 @@ class PostCard extends Component {
     if (type === "favorites") {
       return (
         <TrashIcon
-          className="inactive-overlay overlay Header-icon"
+          className="inactive-overlay overlay favorite-icon"
           currentColor="white"
           onClick={this.toggleFavorite}
         />
@@ -39,8 +39,8 @@ class PostCard extends Component {
       return (
         <HeartIcon
           className={isThisFavorite ?
-            "active-overlay overlay Header-icon" :
-            "inactive-overlay overlay Header-icon"
+            "active-overlay overlay favorite-icon" :
+            "inactive-overlay overlay favorite-icon"
           }
           currentColor={isThisFavorite ?
             "#f47a76" :
