@@ -18,18 +18,18 @@ This project was bootstrapped using create-react-app (CRA) and deployment eased 
 
 ## Supported Browsers
 
-As of its initial release SubReddit has been tested and confirmed to work appropriatly in the most recent versions of Chrome and Firefox (Debian Stretch) as well as on the Android version of Chrome and Firefox. 
+As of its initial release SubReddit has been tested and confirmed to work appropriatly in the most recent versions of Chrome and Firefox (Debian Stretch) as well as on the Android version of Chrome and Firefox. Please note that the content blocking setting recently added to Firefox for Android may interfere with loading much of the application.
 
 ## Roadmap
 
-SubReddit is very much at a 1.0 release step. High priority features on the project roadmap include:
+SubReddit is very much at a 1.0 release stage. High priority features on the project roadmap include:
 
 1. Implementation of a rigorous test system to ensure code quality and enable TDD.
-1. The ability for users to store favorited post data in browser storage for future visits.
-1. Lazy-loading or load-more button to allow uses access additional top-posts from the subreddit.
+1. The ability for users to store favorite post data in browser storage for future visits.
+1. infinite-loading or load-more button to allow users to access additional top-posts from the subreddit.
 1. A tasteful exit-animation when removing favorited posts in the favorites view.
 1. The ability for users to follow add additional subreddits to follow.
-
+1. lazy-loading
 
 ## Available Scripts
 
