@@ -67,13 +67,15 @@ class PostCard extends Component {
     const { title, image, permalink, user, ups } = this.props.post
     return (
       <div className="post-card">
-        <img
-          className="post-image"
-          alt={title}
-          src={image}
-        >
-        </img>
-        {this.favoriteIcon()}
+        <div className="post-image-container">
+          <img
+            className="post-image"
+            alt={title}
+            src={image}
+          >
+          </img>
+          {this.favoriteIcon()}
+        </div>
         <a
           className="post-title"
           href={`https://reddit.com${permalink}`}
