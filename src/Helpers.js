@@ -40,8 +40,8 @@ export const pickImage = (data) => {
 // Takes JS date obj and returns string in mm/dd/yy formate
 export const mmddyy = (date) => {
   const mm = date.getMonth() + 1 //JS Months are indexed a 0
-  const dd = date.getDay()
-  const yyyy = date.getFullYear()
+  const dd = date.getDay();
+  const yyyy = date.getFullYear();
 
-  return [mm, dd, yyyy % 100].join('/')
+  return [mm, dd, yyyy % 100].join('/');
 }
