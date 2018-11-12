@@ -1,6 +1,6 @@
 # SubReddit
 
-SubReddit allows users to view and favorite posts on the r/evilbuildings subreddit. 
+SubReddit allows users to view and favorite posts on the r/analog subreddit. 
 
 ## Technologies
 

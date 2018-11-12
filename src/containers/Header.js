@@ -11,7 +11,7 @@ class Header extends Component {
       <div className="Header">
         <NavLink exact to="/" activeClassName="Header-active" className="Header-section">
           <RedditLogo className="Header-icon" alt="reddit logo" currentColor="white" />
-          <div>/r/evilbuildings</div>
+          <div>/r/analog</div>
         </NavLink>
         <NavLink to="/favorites" activeClassName="Header-active" className="Header-section">
           <HeartIcon className="Header-icon" alt="heart icon" currentColor="#57a2e4" />

@@ -11,7 +11,7 @@ class Main extends Component {
   }
 
   fetchPosts = () => {
-    axios.get("https://www.reddit.com/r/evilbuildings/top.json")
+    axios.get("https://www.reddit.com/r/analog/top.json")
       .then(resp => {
         const posts = resp.data.data.children.map(post => {
           const data = post.data
