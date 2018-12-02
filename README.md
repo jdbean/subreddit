@@ -2,6 +2,8 @@
 
 SubReddit allows users to view and favorite posts on the r/analog subreddit. 
 
+![SubReddit Preivew](preview.gif)
+
 ## Technologies
 
 The project is a single page application written in React with two routes: one for viewing top posts and another for viewing favorites. No styling frameworks have been used in this project, all CSS and animations are custom developed in order to keep the project as lean as possible. External dependencies include:
